@@ -1,0 +1,27 @@
+# Uploaded files
+uploads/products/*
+!uploads/products/.gitkeep
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+/*.md
+
+index.html
+
+test_api.html

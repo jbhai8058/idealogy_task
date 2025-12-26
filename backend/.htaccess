@@ -1,0 +1,11 @@
+# Allow access only to PHP files (they will handle session checks internally)
+# Block direct access to includes folder
+<FilesMatch "\.php$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Block access to includes directory
+RewriteEngine On
+RewriteRule ^includes/ - [F,L]
+

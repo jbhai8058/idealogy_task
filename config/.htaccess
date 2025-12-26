@@ -1,0 +1,4 @@
+# Deny all direct access to config files
+Order Deny,Allow
+Deny from all
+

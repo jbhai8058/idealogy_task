@@ -1,0 +1,35 @@
+STEP 1: INSTALL XAMPP
+---------------------
+1. Download XAMPP with PHP 8.2+ from: https://www.apachefriends.org/
+2. Install XAMPP
+3. Start Apache and MySQL from XAMPP Control Panel
+
+
+STEP 2: SETUP DATABASE
+----------------------
+1. Open phpMyAdmin: http://localhost/phpmyadmin
+2. Click "Import" tab
+3. Select file: database_setup.sql (from project root)
+4. Click "Go" button
+5. Database "idealogy_test" will be created with sample data
+
+
+STEP 3: VERIFY PROJECT LOCATION
+--------------------------------
+Windows:
+  C:\xampp\htdocs\test_project\
+
+
+
+STEP 5: ACCESS THE APPLICATION
+-------------------------------
+
+BACKEND (Admin Panel):
+URL: http://localhost/test_project/backend/login.php
+Login: super / super (Super Admin)
+       admin / admin (Regular Admin)
+
+FRONTEND (User Site):
+URL: http://localhost/test_project/frontend/index.html
+
+
