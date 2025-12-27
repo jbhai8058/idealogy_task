@@ -1,23 +1,18 @@
-# Enable Rewrite Engine
 RewriteEngine On
 
-# Block access to sensitive files
 <FilesMatch "\.(sql|env|git|gitignore|htaccess|ini|log|sh|inc|bak)$">
     Order Allow,Deny
     Deny from all
 </FilesMatch>
 
-# Security Headers
 <IfModule mod_headers.c>
     Header set X-Content-Type-Options "nosniff"
     Header set X-Frame-Options "SAMEORIGIN"
     Header set X-XSS-Protection "1; mode=block"
 </IfModule>
 
-# Disable directory browsing
 Options -Indexes
 
-# PHP Security Settings
 <IfModule mod_php8.c>
     php_flag display_errors off
     php_flag expose_php off
